@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Authors on Florian Siepe</title>
+    <link>/authors/</link>
+    <description>Recent content in Authors on Florian Siepe</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="/authors/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>/authors/admin/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/authors/admin/</guid>
+      <description>I am a software developer somewhere in the nowhere of North Hessia. My interests include software development in all kinds of forms. In particular the Java ecosystem, cloud-native business apps and modern web applications.
+My primary technologies include both the Java and the Javascript world. By using frameworks like Angular, Spring Boot and Quarkus I create scaleable containerised applications.</description>
+    </item>
+    
+  </channel>
+</rss>
