@@ -3,10 +3,6 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/authors/admin/</loc>
-  </url>
-  
-  <url>
     <loc>/authors/</loc>
   </url>
   
@@ -16,6 +12,10 @@
   
   <url>
     <loc>/</loc>
+  </url>
+  
+  <url>
+    <loc>/author/florian-siepe/</loc>
   </url>
   
   <url>
