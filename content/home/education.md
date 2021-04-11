@@ -26,12 +26,20 @@ date_format = "Jan 2006"
 #  date_end = "2023-03-31"
 
 [[experience]]
+  title = "MSc Informatics"
+  company = "Philipps-University"
+  company_url = "https://www.uni-marburg.de/"
+  location = "Marburg"
+  date_start = "2021-04-01"
+  date_end = ""
+
+[[experience]]
   title = "BSc Softwaretechnology"
   company = "THM & Studiumplus"
   company_url = "https://studiumplus.de"
   location = "Frankenberg (Eder)"
   date_start = "2017-10-01"
-  date_end = "2021-02-01"
+  date_end = "2021-03-31"
 
 [[experience]]
   title = "Study Aborad"

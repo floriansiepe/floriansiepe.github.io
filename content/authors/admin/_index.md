@@ -16,8 +16,8 @@ role: Software Engineer
 organizations:
 - name: Viessmann
   url: "https://viessmann.com"
-#- name: Philipps-University Marburg
-#  url: https://www.uni-marburg.de
+- name: Philipps-University Marburg
+  url: https://www.uni-marburg.de
 - name: Technische Hochschule Mittelhessen
   url: "https://thm.de"
 - name: University of Essex
@@ -33,8 +33,9 @@ interests:
 
 education:
   courses:
-#  - course: MSc Computer Science
-#    institution: Philipps-University Marburg
+  - course: MSc Informatics
+    institution: Philipps-University Marburg
+    year: 2021-today
   - course: BSc in Softwaretechnology
     institution: Technische Hochschule Mittelhessen
     year: 2017-2021
@@ -59,6 +60,11 @@ social:
 - icon: github
   icon_pack: fab
   link: https://github.com/floriansiepe
+- icon: cv
+  icon_pack: ai
+  link: media/cv.pdf
+  display:
+    header: true
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
 # - icon: cv
