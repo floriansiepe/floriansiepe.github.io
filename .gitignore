@@ -1,4 +1,8 @@
-public/
+# IDEs
 .idea/
-deploy_key
-content/authors/admin/_index.md
+
+# Hugo
+/resources/
+public/
+jsconfig.json
+node_modules/
