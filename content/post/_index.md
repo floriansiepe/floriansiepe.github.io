@@ -1,7 +1,6 @@
 ---
 title: Posts
-cms_exclude: true
-
+draft: true
 # View.
 #   1 = List
 #   2 = Compact
@@ -13,3 +12,9 @@ header:
   caption: ""
   image: ""
 ---
+
+This is a optional header for posts
+
+> "If debugging is the process of removing software bugs, then programming must be the process of putting them in."
+>
+> <cite>Edsger W. Dijkstra</cite>
