@@ -27,6 +27,7 @@ date_format = "Jan 2006"
   description = """
   Responsibilities include:
   
+  * Development & Maintenance of a B2B E-Commerce System built with Angular
   * Development of Java-based Backend-Services
   * Integration of SAP resources
   * Database modelling
