@@ -24,18 +24,18 @@ organizations:
   url: "https://www.essex.ac.uk"
 
 # Short bio (displayed in user profile at end of posts)
-bio: Software developer with main focus on the Java ecosystem.
+bio: Software developer intested in Big Data Analysis and Full-Stack Webdevelopment.
 
 interests:
-- Books
-- Classic Rock Musik
-- Philosophy
+- Software Development
+- Cluster- & Timeseries Analysis
+- Machine Learning
 
 education:
   courses:
   - course: MSc Informatics
     institution: Philipps-University Marburg
-    year: 2021-today
+    year: 2021-2023
   - course: BSc in Softwaretechnology
     institution: Technische Hochschule Mittelhessen
     year: 2017-2021
@@ -81,6 +81,6 @@ user_groups:
 - Visitors
 ---
 
-I am a software developer somewhere in the nowhere of North Hessia. My interests include software development in all kinds of forms. In particular the Java ecosystem, cloud-native business apps as well as modern web applications.
+I am a software developer somewhere in the nowhere of North Hessia. My interests include software development in all kinds of forms. In particular, the fields of Big Data and Full-Stack development are my home.
 
-My primary technologies include both the Java and the Javascript world. Frameworks like [Angular](https://angular.io), [Spring Boot](https://spring.io) or [Quarkus](https://quarkus.io) are my primary toolsets.
+My primary technologies include both the Python, Java and the Javascript world. Frameworks like [Sklearn](https://scikit-learn.org), [Scipy](https://scipy.org) or [Angular](https://angular.io) and [Quarkus](https://quarkus.io) are my primary toolsets.

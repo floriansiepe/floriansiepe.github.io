@@ -17,19 +17,19 @@ subtitle = ""
 [[feature]]
   icon = "angular"
   icon_pack = "fab"
-  name = "Angular"
-  description = "Developing beautiful SPAs utilizing the Material Design"
+  name = "UI"
+  description = "Developing beautiful SPAs"
   
 [[feature]]
   icon = "java"
   icon_pack = "fab"
-  name = "Java"
-  description = "Creating and maintaing business-orientet apps using the Spring Boot and Quarkus Stack"  
+  name = "Full-Stack"
+  description = "Creating and maintaing microservice applications"  
   
 [[feature]]
-  icon = "database"
-  icon_pack = "fas"
-  name = "Databases"
-  description = "Keep data in order by using non-/relational databases"
+  icon = "robot"
+  icon_pack = "fa"
+  name = "Big Data Analytics & ML"
+  description = "Analyze timeseries data for ML"
 
 +++

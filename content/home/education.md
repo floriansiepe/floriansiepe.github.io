@@ -31,7 +31,7 @@ date_format = "Jan 2006"
   company_url = "https://www.uni-marburg.de/"
   location = "Marburg"
   date_start = "2021-04-01"
-  date_end = ""
+  date_end = "2023-09-01"
 
 [[experience]]
   title = "BSc Softwaretechnology"
