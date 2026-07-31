@@ -1,0 +1,23 @@
+[
+  {
+    "icon": "spark",
+    "title": "Data Science",
+    "description": "Analysis and modeling of complex time-series data, with a focus on clustering and machine learning.",
+    "tags": ["Time Series", "Clustering", "Python", "scikit-learn", "SciPy"],
+    "url": "https://floriansiepe.de/"
+  },
+  {
+    "icon": "network",
+    "title": "Big Data & HPC",
+    "description": "Scalable data processing through distributed and high-performance computing techniques.",
+    "tags": ["Big Data", "Distributed Computing", "HPC", "Spark"],
+    "url": "https://www.linkedin.com/in/florian-siepe/"
+  },
+  {
+    "icon": "terminal",
+    "title": "Systems & Software",
+    "description": "Rust programming backed by professional experience in software engineering and full-stack systems.",
+    "tags": ["Rust", "Software Engineering", "Java", "Angular", "Spring Boot"],
+    "url": "https://github.com/floriansiepe"
+  }
+]

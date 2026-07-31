@@ -1,0 +1,35 @@
+<header class="site-header">
+  <a class="brand" href="#home" (click)="closeMenu()" [attr.aria-label]="profile().name + ', home'">
+    <span class="brand-mark">{{ profile().initials }}</span>
+    <span>{{ profile().name }}</span>
+  </a>
+  <nav id="site-navigation" class="nav" [class.nav-open]="menuOpen()" aria-label="Main navigation">
+    <a href="#about" (click)="closeMenu()">About</a>
+    <a href="#publications" (click)="closeMenu()">Publications</a>
+    <a href="#projects" (click)="closeMenu()">Projects</a>
+    <a href="#cv" (click)="closeMenu()">CV</a>
+    <a href="#contact" (click)="closeMenu()">Contact</a>
+  </nav>
+  <div class="header-actions">
+    <button
+      class="icon-button theme-toggle"
+      type="button"
+      (click)="themeService.toggle()"
+      [attr.aria-label]="
+        'Switch to ' + (themeService.theme() === 'dark' ? 'light' : 'dark') + ' theme'
+      "
+    >
+      <svg><use [attr.href]="themeService.theme() === 'dark' ? '#icon-sun' : '#icon-moon'" /></svg>
+    </button>
+    <button
+      class="icon-button menu-toggle"
+      type="button"
+      (click)="toggleMenu()"
+      [attr.aria-expanded]="menuOpen()"
+      aria-controls="site-navigation"
+      aria-label="Toggle navigation"
+    >
+      <svg><use href="#icon-menu" /></svg>
+    </button>
+  </div>
+</header>

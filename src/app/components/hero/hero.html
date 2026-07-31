@@ -1,0 +1,71 @@
+<section class="hero" id="about">
+  <div class="hero-orb orb-one"></div>
+  <div class="hero-orb orb-two"></div>
+  <div class="profile-column">
+    <div class="portrait-wrap">
+      <img
+        class="portrait"
+        [src]="profile().image"
+        [alt]="profile().name"
+        width="178"
+        height="178"
+      />
+      <span class="available-dot" title="Open to collaboration"></span>
+    </div>
+    <div class="eyebrow">{{ profile().greeting }}</div>
+    <h1>{{ profile().name }}<span>.</span></h1>
+    <p class="role">{{ profile().role }}</p>
+    <p class="affiliation">{{ profile().affiliation }}</p>
+    <div class="location">
+      <svg><use href="#icon-pin" /></svg> {{ profile().location }}
+    </div>
+    <div class="social-row" aria-label="Social profiles">
+      @for (social of profile().socialLinks; track social.label) {
+        <a
+          [href]="social.url"
+          [attr.target]="social.url.startsWith('http') ? '_blank' : null"
+          [attr.rel]="social.url.startsWith('http') ? 'noopener' : null"
+          [attr.aria-label]="social.label"
+          ><svg><use [attr.href]="'#icon-' + social.icon" /></svg
+        ></a>
+      }
+    </div>
+  </div>
+  <div class="intro-column">
+    <div class="section-kicker">
+      <span class="kicker-icon"
+        ><svg><use href="#icon-spark" /></svg
+      ></span>
+      About me
+    </div>
+    <h2>
+      @for (segment of profile().headline; track $index) {
+        <span [class.accent]="segment.accent">{{ segment.text }}</span>
+      }
+    </h2>
+    @for (paragraph of profile().biography; track paragraph) {
+      <p>{{ paragraph }}</p>
+    }
+    <div class="hero-actions">
+      <a class="button button-primary" href="#publications"
+        >Explore my work <svg><use href="#icon-arrow" /></svg
+      ></a>
+      <a
+        class="button button-secondary"
+        [href]="profile().cvUrl"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <svg><use href="#icon-download" /></svg> View CV
+      </a>
+    </div>
+    <dl class="metrics">
+      @for (metric of profile().metrics; track metric.label) {
+        <div>
+          <dt>{{ metric.value }}</dt>
+          <dd>{{ metric.label }}</dd>
+        </div>
+      }
+    </dl>
+  </div>
+</section>

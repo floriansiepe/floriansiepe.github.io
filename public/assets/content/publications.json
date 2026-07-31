@@ -1,0 +1,60 @@
+[
+  {
+    "year": "2025",
+    "type": "DSAA 2025",
+    "title": "ModelForge: A Metric Approach to Machine Learning Model Consolidation",
+    "authors": "Florian Siepe, Thomas Peter Prinz, Thorsten Papenbrock",
+    "venue": "IEEE 12th International Conference on Data Science and Advanced Analytics · Birmingham, UK",
+    "accent": "cyan",
+    "image": "assets/publications/modelforge-embedding.png",
+    "imageAlt": "UMAP projection of the ModelForge model embedding space",
+    "imageFit": "contain",
+    "bibtex": "@inproceedings{siepe2025modelforge,\n  title     = {{ModelForge}: A Metric Approach to Machine Learning Model Consolidation},\n  author    = {Siepe, Florian and Prinz, Thomas Peter and Papenbrock, Thorsten},\n  booktitle = {2025 IEEE 12th International Conference on Data Science and Advanced Analytics (DSAA)},\n  pages     = {1--12},\n  year      = {2025},\n  month     = {October},\n  publisher = {IEEE},\n  address   = {Birmingham, United Kingdom},\n  doi       = {10.1109/DSAA65442.2025.11247992}\n}",
+    "links": [
+      {
+        "label": "PDF",
+        "url": "https://www.uni-marburg.de/en/fb12/research-groups/big_data_analytics/projects/modelforge-artifacts/modelforge.pdf",
+        "icon": "copy"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/UMR-Big-Data-Analytics/ModelForge",
+        "icon": "github"
+      },
+      {
+        "label": "Scholar",
+        "url": "https://scholar.google.de/citations?view_op=view_citation&hl=en&user=n1YYxkgAAAAJ&citation_for_view=n1YYxkgAAAAJ:u-x6o8ySG0sC",
+        "icon": "scholar"
+      }
+    ]
+  },
+  {
+    "year": "2023",
+    "type": "LWDA 2023",
+    "title": "A Few Models to Rule Them All: Aggregating Machine Learning Models",
+    "authors": "Florian Siepe, Phillip Wenig, Thorsten Papenbrock",
+    "venue": "Lernen, Wissen, Daten, Analysen · CEUR Workshop Proceedings Vol. 3630",
+    "accent": "violet",
+    "image": "assets/publications/caml-target-architecture.png",
+    "imageAlt": "CAML target architecture with fewer cloud cluster models serving many building heat generators",
+    "imageFit": "contain",
+    "bibtex": "@inproceedings{siepe2023fewmodels,\n  title     = {A Few Models to Rule Them All: Aggregating Machine Learning Models},\n  author    = {Siepe, Florian and Wenig, Phillip and Papenbrock, Thorsten},\n  booktitle = {Lernen, Wissen, Daten, Analysen (LWDA) 2023},\n  series    = {{CEUR} Workshop Proceedings},\n  volume    = {3630},\n  pages     = {506--520},\n  year      = {2023},\n  publisher = {CEUR-WS.org},\n  url       = {https://ceur-ws.org/Vol-3630/LWDA2023-paper44.pdf}\n}",
+    "links": [
+      {
+        "label": "PDF",
+        "url": "https://ceur-ws.org/Vol-3630/LWDA2023-paper44.pdf",
+        "icon": "copy"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/floriansiepe/CAML",
+        "icon": "github"
+      },
+      {
+        "label": "Scholar",
+        "url": "https://scholar.google.de/citations?view_op=view_citation&hl=en&user=n1YYxkgAAAAJ&citation_for_view=n1YYxkgAAAAJ:u5HHmVD_uO8C",
+        "icon": "scholar"
+      }
+    ]
+  }
+]

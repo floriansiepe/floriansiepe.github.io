@@ -1,0 +1,87 @@
+<section class="section publications-section" id="publications">
+  <div class="section-heading">
+    <div>
+      <div class="section-kicker">
+        <span class="kicker-icon"
+          ><svg><use href="#icon-book" /></svg
+        ></span>
+        Selected research
+      </div>
+      <h2>Recent publications</h2>
+    </div>
+    <a class="text-link" [href]="scholarUrl()" target="_blank" rel="noopener"
+      >View all publications <svg><use href="#icon-arrow" /></svg
+    ></a>
+  </div>
+  <div class="publication-list">
+    @for (publication of publications(); track publication.title) {
+      <article class="publication-card">
+        <div
+          class="publication-art"
+          [class]="publication.accent"
+          [class.contain]="publication.imageFit === 'contain'"
+        >
+          <img [src]="publication.image" [alt]="publication.imageAlt" loading="lazy" />
+          <span class="publication-year">{{ publication.year }}</span>
+        </div>
+        <div class="publication-copy">
+          <span class="badge">{{ publication.type }}</span>
+          <h3>{{ publication.title }}</h3>
+          <p class="authors">{{ publication.authors }}</p>
+          <p class="venue">{{ publication.venue }}</p>
+          <div class="paper-links">
+            @for (link of publication.links; track link.label) {
+              <a [href]="link.url"
+                ><svg><use [attr.href]="'#icon-' + link.icon" /></svg>{{ link.label }}</a
+              >
+            }
+            <button
+              class="bibtex-trigger"
+              type="button"
+              [attr.aria-expanded]="expandedBibtex() === publication.title"
+              (click)="toggleBibtex(publication)"
+            >
+              <svg><use href="#icon-copy" /></svg> BibTeX
+            </button>
+          </div>
+          @if (expandedBibtex() === publication.title) {
+            <div class="bibtex-box">
+              <div class="bibtex-box-header">
+                <span>BibTeX citation</span>
+                <button
+                  class="copy-bibtex"
+                  type="button"
+                  [class.copy-success]="copyStates()[publication.title] === 'copied'"
+                  [class.copy-error]="copyStates()[publication.title] === 'error'"
+                  [attr.aria-label]="'Copy BibTeX for ' + publication.title"
+                  (click)="copyBibtex(publication)"
+                >
+                  <svg><use href="#icon-copy" /></svg>
+                  @switch (copyStates()[publication.title]) {
+                    @case ('copied') {
+                      Copied
+                    }
+                    @case ('error') {
+                      Copy failed
+                    }
+                    @default {
+                      Copy citation
+                    }
+                  }
+                </button>
+              </div>
+              <pre><code>{{ publication.bibtex }}</code></pre>
+            </div>
+          }
+        </div>
+        <a class="round-link" href="#publications" [attr.aria-label]="'Read ' + publication.title"
+          ><svg><use href="#icon-arrow" /></svg
+        ></a>
+      </article>
+    } @empty {
+      <div class="empty-publications">
+        <p>Publications and preprints will appear here as the doctoral research progresses.</p>
+      </div>
+    }
+  </div>
+</section>

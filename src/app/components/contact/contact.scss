@@ -1,0 +1,54 @@
+.contact-section {
+  align-items: center;
+  background: var(--color-contact);
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: clamp(65px, 7vw, 95px) max(7vw, 28px);
+
+  > div {
+    max-width: 650px;
+  }
+
+  h2 {
+    font:
+      800 clamp(2rem, 3vw, 2.8rem) / 1.16 'Manrope',
+      sans-serif;
+    letter-spacing: -0.055em;
+    margin: 12px 0 8px;
+  }
+
+  p {
+    color: var(--color-contact-muted);
+    margin: 0;
+  }
+}
+
+.light-kicker {
+  color: #c9c4ff;
+}
+
+.contact-button {
+  background: #fff;
+  color: #31268e;
+  flex-shrink: 0;
+  margin-left: 50px;
+}
+
+@media (max-width: 900px) {
+  .contact-section {
+    align-items: start;
+    flex-direction: column;
+    gap: 28px;
+  }
+
+  .contact-button {
+    margin-left: 0;
+  }
+}
+
+@media print {
+  :host {
+    display: none;
+  }
+}

@@ -1,0 +1,49 @@
+<section class="section cv-section" id="cv">
+  <div class="cv-intro">
+    <div class="section-kicker">
+      <span class="kicker-icon"
+        ><svg><use href="#icon-cap" /></svg
+      ></span>
+      Curriculum vitae
+    </div>
+    <h2>Experience &amp; education</h2>
+    <a
+      class="button button-primary"
+      [href]="cvUrl()"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <svg><use href="#icon-download" /></svg> Open CV
+    </a>
+  </div>
+  <div class="cv-timelines">
+    <section>
+      <h3 class="timeline-group-title">Experience</h3>
+      <div class="timeline">
+        @for (entry of experience(); track entry.title) {
+          <article>
+            <div class="timeline-date">{{ entry.period }}</div>
+            <div>
+              <h3>{{ entry.title }}</h3>
+              <p>{{ entry.organization }}</p>
+            </div>
+          </article>
+        }
+      </div>
+    </section>
+    <section>
+      <h3 class="timeline-group-title">Education</h3>
+      <div class="timeline">
+        @for (entry of education(); track entry.title) {
+          <article>
+            <div class="timeline-date">{{ entry.period }}</div>
+            <div>
+              <h3>{{ entry.title }}</h3>
+              <p>{{ entry.organization }}</p>
+            </div>
+          </article>
+        }
+      </div>
+    </section>
+  </div>
+</section>

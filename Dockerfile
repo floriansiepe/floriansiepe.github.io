@@ -1,26 +1,16 @@
-# Build stage
-FROM klakegg/hugo:ext-ubuntu AS builder
+FROM node:22-alpine AS build
 
-# Set working directory
-WORKDIR /src
+WORKDIR /app
 
-# Copy the entire repository
+COPY package.json package-lock.json ./
+RUN npm ci
+
 COPY . .
+RUN npm run build
 
-# Build the website
-RUN hugo --minify
+FROM nginx:1.29-alpine AS runtime
 
-# Serve stage
-FROM nginx:alpine
-
-# Copy the nginx configuration
 COPY nginx.conf /etc/nginx/conf.d/default.conf
+COPY --from=build /app/dist/academic/browser /usr/share/nginx/html
 
-# Copy the built website from builder stage
-COPY --from=builder /src/public /usr/share/nginx/html
-
-# Expose port 80
 EXPOSE 80
-
-# Start nginx
-CMD ["nginx", "-g", "daemon off;"]

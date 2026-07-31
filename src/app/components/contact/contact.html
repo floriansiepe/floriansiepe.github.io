@@ -1,0 +1,11 @@
+<section class="contact-section" id="contact">
+  <div>
+    <div class="section-kicker light-kicker">Let’s collaborate</div>
+    <h2>{{ profile().contactHeading }}</h2>
+    <p>{{ profile().contactText }}</p>
+  </div>
+  <a class="button contact-button" [href]="profile().contactLink.url" target="_blank" rel="noopener"
+    >{{ profile().contactLink.label }}
+    <svg><use [attr.href]="'#icon-' + profile().contactLink.icon" /></svg
+  ></a>
+</section>

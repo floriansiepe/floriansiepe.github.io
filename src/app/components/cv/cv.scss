@@ -1,0 +1,156 @@
+.cv-section {
+  margin: auto;
+  max-width: 1360px;
+}
+
+.cv-intro {
+  align-items: end;
+  column-gap: 48px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  margin-bottom: clamp(44px, 6vw, 72px);
+
+  .section-kicker,
+  h2,
+  > p {
+    grid-column: 1;
+  }
+
+  h2 {
+    font-size: clamp(2rem, 3vw, 2.8rem);
+    margin-bottom: 10px;
+  }
+
+  > p {
+    color: var(--color-muted);
+    margin-bottom: 0;
+    max-width: 680px;
+  }
+
+  .button {
+    grid-column: 2;
+    grid-row: 1 / 4;
+    margin-bottom: 2px;
+  }
+}
+
+.cv-timelines {
+  display: grid;
+  gap: clamp(44px, 6vw, 80px);
+  grid-template-columns: minmax(0, 0.82fr) minmax(0, 1.18fr);
+}
+
+.timeline-group-title {
+  color: var(--color-muted);
+  font:
+    800 0.72rem 'Manrope',
+    sans-serif;
+  letter-spacing: 0.12em;
+  margin: 0 0 18px 32px;
+  text-transform: uppercase;
+}
+
+.timeline {
+  position: relative;
+
+  &::before {
+    background: var(--color-line);
+    bottom: 25px;
+    content: '';
+    left: 7px;
+    position: absolute;
+    top: 20px;
+    width: 1px;
+  }
+
+  article {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: 145px minmax(0, 1fr);
+    padding: 0 0 24px 32px;
+    position: relative;
+
+    &::before {
+      background: var(--color-surface);
+      border: 3px solid var(--color-primary);
+      border-radius: 50%;
+      content: '';
+      height: 15px;
+      left: 0;
+      position: absolute;
+      top: 7px;
+      width: 15px;
+    }
+  }
+
+  h3 {
+    font:
+      700 1.15rem/1.35 'Manrope',
+      sans-serif;
+    letter-spacing: -0.025em;
+    margin: 0 0 3px;
+  }
+
+  p {
+    color: var(--color-muted);
+    font-size: 0.85rem;
+    margin: 0;
+  }
+}
+
+.timeline-date {
+  color: var(--color-primary);
+  font-size: 0.75rem;
+  font-weight: 800;
+  padding-top: 5px;
+  white-space: nowrap;
+}
+
+@media (max-width: 1100px) {
+  .cv-section {
+    max-width: 760px;
+  }
+
+  .cv-timelines {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 620px) {
+  .timeline article {
+    gap: 8px;
+    grid-template-columns: 1fr;
+  }
+
+  .cv-intro {
+    display: block;
+
+    .button {
+      margin-top: 24px;
+    }
+  }
+}
+
+@media print {
+  .cv-intro .button {
+    display: none;
+  }
+
+  .cv-section {
+    display: block;
+    padding: 20px;
+
+    &::before {
+      content: 'Florian Siepe — Curriculum Vitae';
+      display: block;
+      font:
+        800 28px 'Manrope',
+        sans-serif;
+      margin-bottom: 30px;
+    }
+  }
+
+  .cv-intro {
+    margin-bottom: 40px;
+  }
+}

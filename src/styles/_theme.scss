@@ -1,0 +1,35 @@
+@use 'sass:map';
+
+$light-theme: (
+  ink: #151525,
+  muted: #646478,
+  soft: #f4f5fa,
+  surface: #ffffff,
+  line: #e7e7ef,
+  primary: #6254e8,
+  primary-strong: #4739c6,
+  hero: linear-gradient(115deg, #e8f2ff, #f7edff 52%, #eafff9),
+  contact: #5144cb,
+  contact-muted: #dcd9ff,
+  shadow: 0 24px 60px rgba(38, 34, 87, 0.1),
+);
+
+$dark-theme: (
+  ink: #f5f4ff,
+  muted: #aaa8bd,
+  soft: #181723,
+  surface: #22212f,
+  line: #373545,
+  primary: #9b8cfb,
+  primary-strong: #b2a7ff,
+  hero: linear-gradient(115deg, #191c2a, #251c30 55%, #172924),
+  contact: #302775,
+  contact-muted: #d5d0ff,
+  shadow: 0 24px 60px rgba(0, 0, 0, 0.25),
+);
+
+@mixin apply($theme) {
+  @each $name, $value in $theme {
+    --color-#{$name}: #{$value};
+  }
+}

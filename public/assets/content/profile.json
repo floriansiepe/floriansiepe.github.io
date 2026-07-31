@@ -1,0 +1,54 @@
+{
+  "name": "Florian Siepe",
+  "initials": "FS",
+  "image": "assets/images/florian-siepe.jpg",
+  "cvUrl": "assets/florian-siepe-cv.pdf",
+  "greeting": "Hello, I’m",
+  "role": "Data Scientist & PhD Candidate",
+  "affiliation": "Viessmann Climate Solutions · Philipps-Universität Marburg",
+  "location": "Marburg, Hessen, Germany",
+  "headline": [
+    { "text": "I turn complex data into insight through ", "accent": false },
+    { "text": "time series, clustering, ", "accent": true },
+    { "text": "and ", "accent": false },
+    { "text": "distributed computing.", "accent": true }
+  ],
+  "biography": [
+    "I am a Data Scientist from North Hesse working with time-series data, clustering, and large-scale data processing. My interests include distributed computing and high-performance computing, with Python, scikit-learn, and SciPy among my primary tools.",
+    "Alongside my work at Viessmann Climate Solutions, I am pursuing a doctorate in Computer Science at Philipps-Universität Marburg. I previously worked as a Software Engineer in full-stack development and still enjoy systems and software engineering, including programming in Rust."
+  ],
+  "metrics": [
+    { "value": "Time Series", "label": "Applied data science" },
+    { "value": "Clustering", "label": "Doctoral research" },
+    { "value": "Big Data", "label": "Distributed computing" }
+  ],
+  "socialLinks": [
+    {
+      "label": "Personal website",
+      "url": "https://floriansiepe.de/",
+      "icon": "external"
+    },
+    {
+      "label": "LinkedIn profile",
+      "url": "https://www.linkedin.com/in/florian-siepe/",
+      "icon": "linkedin"
+    },
+    {
+      "label": "GitHub profile",
+      "url": "https://github.com/floriansiepe",
+      "icon": "github"
+    },
+    {
+      "label": "Google Scholar profile",
+      "url": "https://scholar.google.de/citations?hl=en&user=n1YYxkgAAAAJ",
+      "icon": "scholar"
+    }
+  ],
+  "contactHeading": "Let’s connect",
+  "contactText": "I’m interested in thoughtful conversations about data science, time series, clustering, distributed computing, and HPC.",
+  "contactLink": {
+    "label": "Connect on LinkedIn",
+    "url": "https://www.linkedin.com/in/florian-siepe/",
+    "icon": "linkedin"
+  }
+}

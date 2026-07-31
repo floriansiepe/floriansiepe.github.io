@@ -1,0 +1,50 @@
+[
+  {
+    "category": "experience",
+    "period": "Jun 2024 — Present",
+    "title": "Data Scientist",
+    "organization": "Viessmann Climate Solutions · Allendorf (Eder), Hessen · Distributed Computing, scikit-learn, and more"
+  },
+  {
+    "category": "experience",
+    "period": "Feb 2021 — May 2024",
+    "title": "Software Engineer",
+    "organization": "Viessmann / Viessmann Climate Solutions · Allendorf (Eder), Hessen · Full-Stack Development"
+  },
+  {
+    "category": "experience",
+    "period": "Aug 2016 — Jan 2021",
+    "title": "Dual Student",
+    "organization": "Viessmann · Allendorf (Eder)"
+  },
+  {
+    "category": "education",
+    "period": "Jan 2024 — Jul 2027",
+    "title": "Doctoral Student (Dr. rer. nat.) · Computer Science",
+    "organization": "Philipps-Universität Marburg · Cluster Analysis · Distributed Computing"
+  },
+  {
+    "category": "education",
+    "period": "Apr 2021 — Sep 2023",
+    "title": "Master of Science · Computer Science",
+    "organization": "Philipps-Universität Marburg · Grade 1.4 · Machine Learning"
+  },
+  {
+    "category": "education",
+    "period": "2017 — 2021",
+    "title": "Bachelor of Science · Software Technology",
+    "organization": "Technische Hochschule Mittelhessen · Grade 1.2 · Best graduate Software Technology 2021"
+  },
+  {
+    "category": "education",
+    "period": "2019",
+    "title": "Study Abroad Semester · Computer Science",
+    "organization": "University of Essex · During BSc in Software Technology"
+  },
+  {
+    "category": "education",
+    "period": "2016 — 2017",
+    "title": "Business Administration · Business Informatics",
+    "organization": "Technische Hochschule Mittelhessen"
+  }
+]
